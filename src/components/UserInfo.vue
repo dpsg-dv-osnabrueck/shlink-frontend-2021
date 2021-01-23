@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container v-if="hasAuthModule">
     <v-row>
       <v-col class="text-right">
         <p class="caption">
@@ -22,6 +22,11 @@ export default {
 
     userName() {
       return this.authentication.user.email;
+    },
+
+    hasAuthModule() {
+      const auth = Boolean(process.env.VUE_APP_MATTERMOST_AUTH);
+      return !auth;
     },
   },
   methods: {

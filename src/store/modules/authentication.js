@@ -109,5 +109,12 @@ export const actions = {
 };
 
 export const getters = {
-  isAuthenticated: (state) => (state.user.email_verified ? state.user.email_verified : false),
+  isAuthenticated: (state) => {
+    const auth = Boolean(process.env.VUE_APP_MATTERMOST_AUTH);
+    if (auth) {
+      if (state.user.email_verified) return state.user.email_verified;
+    }
+
+    return true;
+  },
 };

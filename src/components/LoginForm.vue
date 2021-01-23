@@ -1,5 +1,8 @@
 <template>
   <v-card>
+    <v-card-title>
+      {{ i18n.LOGIN_TITLE }}
+    </v-card-title>
     <v-card-text>
       <v-form ref="form" v-model="valid" lazy-validation>
         <v-alert type="error" v-if="wrongCreds" class="mb-2">
@@ -42,9 +45,10 @@
           prepend-inner-icon="mdi-account-key"
         />
         <v-card-actions>
+          <v-spacer></v-spacer>
           <v-btn
             :disabled="!valid"
-            color="success"
+            color="primary"
             class="mr-4"
             @click="checkMFA"
             :loading="authentication.status === status.loading"
