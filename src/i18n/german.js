@@ -1,0 +1,17 @@
+export default {
+  LOGIN_FORM_USERNAME: 'Benutzername',
+  LOGIN_FORM_PASSWORD: 'Password',
+  LOGIN_FORM_MFA: 'Authentifizierungs-Code',
+  LOGIN_FORM_BUTTON_LOGIN: 'Login',
+  LOGIN_ERROR: 'Es gab ein Problem bei der Anmeldung',
+  LOGOUT_LABEL: 'Logout',
+  DOMAIN_LIST_REDIRECT: 'wird weitergeleitet auf',
+  DOMAIN_LIST_CREATED: 'erstellt am',
+  DOMAIN_CREATE_LONG_URL: 'Verkürze deinen Link',
+  DOMAIN_CREATE_CUSTOM: 'Eigene URL (optional)',
+  DOMAIN_CREATE_BUTTON: 'Kürzen',
+  DOMAIN_CREATE_DUPLICATE: 'Der angegebene Link existiert bereits',
+  FORM_REQUIRED: 'Bitte ausfüllen',
+  FORM_OPTIONAL: 'Optional',
+  FORM_URL_TYPE: 'Url muss mit http(s):// anfangen',
+};
